@@ -152,7 +152,7 @@ const TarotPage = () => {
                       <motion.div
                         key="front"
                         initial={{ rotateY: -90 }}
-                        animate={{ rotateY: card.isReversed ? 180 : 0 }}
+                        animate={{ rotateY: 0 }}
                         transition={{ duration: 0.3 }}
                         className="absolute inset-0 bg-gradient-to-br from-amber-50 to-yellow-100 rounded-2xl border-2 border-yellow-600 p-6 flex flex-col items-center justify-between backface-hidden"
                         style={{ transformStyle: 'preserve-3d' }}
