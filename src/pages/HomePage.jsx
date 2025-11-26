@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Clock, Gamepad2, Wrench, BarChart3, Lightbulb } from 'lucide-react';
+import { Clock, Gamepad2, Wrench, BarChart3, Lightbulb, Sparkles } from 'lucide-react';
 
 const HomePage = () => {
   const modules = [
@@ -12,6 +12,14 @@ const HomePage = () => {
       icon: Clock,
       color: 'from-red-500 to-orange-500',
       path: '/pomodoro'
+    },
+    {
+      id: 'tarot',
+      title: '塔罗占卜',
+      description: '探索命运的指引',
+      icon: Sparkles,
+      color: 'from-purple-600 to-indigo-600',
+      path: '/tarot'
     },
     {
       id: 'games',
