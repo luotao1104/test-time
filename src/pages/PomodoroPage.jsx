@@ -18,34 +18,34 @@ function PomodoroPage() {
       }`}
     >
       {/* Header */}
-      <header className="absolute top-0 left-0 right-0 p-6 flex justify-between items-center z-10">
+      <header className="absolute top-0 left-0 right-0 p-4 md:p-6 flex justify-between items-center z-10">
         <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-          <ArrowLeft className="w-6 h-6" />
-          <span className="font-medium">返回首页</span>
+          <ArrowLeft className="w-5 h-5 md:w-6 md:h-6" />
+          <span className="text-sm md:text-base font-medium">返回首页</span>
         </Link>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2 md:gap-4">
           <div className="flex items-center gap-2">
-            <div className="w-6 h-6 rounded-full bg-pomodoro-red" />
-            <span className="font-bold text-xl tracking-tight">Pomodoro</span>
+            <div className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-pomodoro-red" />
+            <span className="font-bold text-lg md:text-xl tracking-tight">Pomodoro</span>
           </div>
           <button 
             onClick={() => setIsSettingsOpen(true)}
-            className="p-3 rounded-2xl hover:bg-white/10 transition-colors backdrop-blur-sm"
+            className="p-2 md:p-3 rounded-2xl hover:bg-white/10 transition-colors backdrop-blur-sm"
           >
-            <SettingsIcon className="w-6 h-6" />
+            <SettingsIcon className="w-5 h-5 md:w-6 md:h-6" />
           </button>
         </div>
       </header>
 
       {/* Main Content */}
-      <main className="flex flex-col items-center z-10">
+      <main className="flex flex-col items-center z-10 px-4">
         {/* Mode Switcher */}
-        <div className="flex p-1 bg-black/20 backdrop-blur-lg rounded-full mb-12">
+        <div className="flex p-1 bg-black/20 backdrop-blur-lg rounded-full mb-8 md:mb-12">
           {Object.values(MODES).map((m) => (
             <button
               key={m.id}
               onClick={() => switchMode(m.id)}
-              className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+              className={`px-4 md:px-6 py-2 rounded-full text-xs md:text-sm font-medium transition-all duration-300 ${
                 mode === m.id 
                   ? 'bg-pomodoro-surface text-white shadow-lg scale-105' 
                   : 'text-white/60 hover:text-white hover:bg-white/5'
