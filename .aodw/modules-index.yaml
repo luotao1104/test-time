@@ -1,0 +1,23 @@
+version: 1
+
+modules:
+  # PRP CLI Agent Advanced 核心模块
+  - name: backend
+    path: docs/modules/backend.md
+    root: backend/app
+    description: FastAPI 后端应用，处理 HTTP/WebSocket 请求
+
+  - name: prp_agent
+    path: docs/modules/prp_agent.md
+    root: backend/app/prp_agent
+    description: 核心业务逻辑模块，包含对话管理、文件处理、任务执行等
+
+  - name: frontend
+    path: docs/modules/frontend.md
+    root: frontend/app
+    description: React 前端应用，提供用户界面
+
+  - name: monitoring
+    path: docs/modules/monitoring.md
+    root: backend/app
+    description: 监控与告警相关路由、中间件和指标收集组件（RT-002）

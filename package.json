@@ -17,6 +17,7 @@
     "@splinetool/runtime": "^1.12.4",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.9.1",
+    "aodw": "^0.1.11",
     "dagre": "^0.8.5",
     "driver.js": "^1.4.0",
     "framer-motion": "^10.16.4",
