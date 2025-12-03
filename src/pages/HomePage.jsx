@@ -21,7 +21,7 @@ const HomePage = () => {
   const modules = [
     {
       id: 'pomodoro',
-      title: '番茄钟',
+      title: '番茄时间',
       description: '专注工作，提高效率',
       icon: Clock,
       color: 'from-red-500 to-orange-500',
@@ -91,7 +91,7 @@ const HomePage = () => {
       showProgress: true,
       steps: [
         { element: '#header-title', popover: { title: '欢迎来到 Focus Hub', description: '这里是你的专注与创造力工作站。' } },
-        { element: '#module-pomodoro', popover: { title: '番茄钟', description: '使用番茄工作法来保持专注，提高效率。' } },
+        { element: '#module-pomodoro', popover: { title: '番茄时间', description: '使用番茄工作法来保持专注，提高效率。' } },
         { element: '#module-tarot', popover: { title: '塔罗占卜', description: '迷茫时，不妨来这里寻找一点指引。' } },
         { element: '#module-games', popover: { title: '小游戏', description: '工作累了？来玩把贪吃蛇或扫雷放松一下。' } },
         { element: '#module-physics', popover: { title: '物理工坊', description: '全新的解压实验室，尽情释放压力！' } },
